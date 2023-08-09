@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a7ec3b8-80de-4c62-a66b-d37261b9e14b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +27,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2TkSSE5Awo873kcj99RkUdFx44T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -44,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

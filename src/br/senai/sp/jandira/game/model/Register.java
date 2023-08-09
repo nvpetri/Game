@@ -3,7 +3,7 @@ package br.senai.sp.jandira.game.model;
 import java.util.Scanner;
 
 public class Register {
-    public void register(){
+    public void Register(){
         /* Instancia Scanner*/
         Scanner teclado = new Scanner(System.in);
 
