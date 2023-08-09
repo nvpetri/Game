@@ -22,11 +22,11 @@ public class Main {
             System.out.println("Deseja cadastrar quem? (player/enemy) ");
             resposta2 = teclado.next();
 
-            if (resposta2.equals("enemy")){
+            if (resposta2.equalsIgnoreCase("enemy")){
                 Register enemyR = new Register();
 
                 enemyR.EnemyRegister();
-            }else if (resposta2.equals("player")){
+            }else if (resposta2.equalsIgnoreCase("player")){
                 Register playerR = new Register();
 
                 playerR.PlayerRegister();
