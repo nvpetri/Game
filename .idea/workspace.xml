@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6a7ec3b8-80de-4c62-a66b-d37261b9e14b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,5 +57,9 @@
       <updated>1691585582989</updated>
     </task>
     <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
