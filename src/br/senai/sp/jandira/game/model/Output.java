@@ -10,6 +10,7 @@ public class Output {
         System.out.println("----- Dados do Player -----");
         System.out.println("Nome: " + player.nome);
         System.out.println("Skin: " + player.skin);
+        System.out.println("A vida do seu player é: " + player.getLife());
         System.out.println("---------------------------");
     }
 
@@ -18,6 +19,7 @@ public class Output {
         System.out.println("----- Dados do Enemy -----");
         System.out.println("Nome: " + enemy.nome);
         System.out.println("Skin: " + enemy.skin);
+        System.out.println("A porcentagem da sua vida é: " + enemy.getLife());
         System.out.println("--------------------------");
     }
 }

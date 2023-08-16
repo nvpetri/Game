@@ -5,30 +5,24 @@ import java.util.Scanner;
 public class Register {
 
     int validaPrint = 0;
-
-    /* Instancia Scanner*/
     Scanner teclado = new Scanner(System.in);
-
-    /*Instancia player */
     Player player = new Player();
-
-    /*Instancia enemy */
     Enemy enemy = new Enemy();
-    /*
-     * Instancia Output
-     */
     Output print = new Output();
 
     public void BothRegister() {
-        validaPrint = 1;
-
-        PlayerRegister();
-
-        EnemyRegister();
-        print.printPlayer(player);
-        print.printEnemy(enemy);
+        do {
+            validaPrint = 1;
+            PlayerRegister();
+            EnemyRegister();
+            print.printPlayer(player);
+            print.printEnemy(enemy);
+        } while (askForMore());
     }
-        public void PlayerRegister () {
+
+    public void PlayerRegister() {
+        do {
+
             System.out.println("-------------Cadastro Player---------------");
             System.out.print("Qual o seu nome: ");
             player.nome = teclado.nextLine();
@@ -39,8 +33,11 @@ public class Register {
             if (validaPrint == 0) {
                 print.printPlayer(player);
             }
-        }
-        public void EnemyRegister () {
+        }while (askForMore());
+    }
+
+    public void EnemyRegister() {
+        do {
             System.out.println("-------------Cadastro Enemy---------------");
             System.out.print("Qual o seu nome: ");
             enemy.nome = teclado.nextLine();
@@ -51,5 +48,12 @@ public class Register {
             if (validaPrint == 0) {
                 print.printEnemy(enemy);
             }
-        }
+        }while (askForMore());
     }
+
+    public boolean askForMore() {
+        System.out.print("Deseja cadastrar mais personagens? (S/N): ");
+        String resposta = teclado.nextLine().trim().toLowerCase();
+        return resposta.equals("s");
+    }
+}
