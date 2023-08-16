@@ -1,5 +1,6 @@
 package br.senai.sp.jandira.game;
 
+import br.senai.sp.jandira.game.model.Output;
 import br.senai.sp.jandira.game.model.Register;
 
 import java.util.Scanner;
@@ -32,8 +33,6 @@ public class Main {
                 playerR.PlayerRegister();
             }
         }
-
-
 
     }
 }

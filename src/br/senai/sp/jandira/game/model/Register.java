@@ -11,28 +11,33 @@ public class Register {
 
     /*Instancia enemy */
     Enemy enemy = new Enemy();
+    /*
+     * Instancia Output
+     */
+    Output print = new Output();
+
     public void BothRegister() {
 
         PlayerRegister();
 
         EnemyRegister();
-
     }
-
-    public void PlayerRegister(){
-        System.out.println("-------------Cadastro Player---------------");
-        System.out.print("Qual o seu nome: ");
-        player.nome = teclado.nextLine();
-        System.out.print("Escolha sua skin (red - green - blue): ");
-        player.skin = teclado.nextLine();
-        System.out.println("----------Cadastro Realizado---------------");
+        public void PlayerRegister () {
+            System.out.println("-------------Cadastro Player---------------");
+            System.out.print("Qual o seu nome: ");
+            player.nome = teclado.nextLine();
+            System.out.print("Escolha sua skin (red - green - blue): ");
+            player.skin = teclado.nextLine();
+            System.out.println("----------Cadastro Realizado---------------");
+            print.printPlayer(player);
+        }
+        public void EnemyRegister () {
+            System.out.println("-------------Cadastro Enemy---------------");
+            System.out.print("Qual o seu nome: ");
+            enemy.nome = teclado.nextLine();
+            System.out.print("Escolha sua skin (red - green - blue): ");
+            enemy.skin = teclado.nextLine();
+            System.out.println("----------Cadastro Realizado---------------");
+            print.printEnemy(enemy);
+        }
     }
-    public void EnemyRegister(){
-        System.out.println("-------------Cadastro Enemy---------------");
-        System.out.print("Qual o seu nome: ");
-        enemy.nome = teclado.nextLine();
-        System.out.print("Escolha sua skin (red - green - blue): ");
-        enemy.skin = teclado.nextLine();
-        System.out.println("----------Cadastro Realizado---------------");
-    }
-}
