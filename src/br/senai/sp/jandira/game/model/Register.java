@@ -3,6 +3,9 @@ package br.senai.sp.jandira.game.model;
 import java.util.Scanner;
 
 public class Register {
+
+    int validaPrint = 0;
+
     /* Instancia Scanner*/
     Scanner teclado = new Scanner(System.in);
 
@@ -17,10 +20,13 @@ public class Register {
     Output print = new Output();
 
     public void BothRegister() {
+        validaPrint = 1;
 
         PlayerRegister();
 
         EnemyRegister();
+        print.printPlayer(player);
+        print.printEnemy(enemy);
     }
         public void PlayerRegister () {
             System.out.println("-------------Cadastro Player---------------");
@@ -29,7 +35,10 @@ public class Register {
             System.out.print("Escolha sua skin (red - green - blue): ");
             player.skin = teclado.nextLine();
             System.out.println("----------Cadastro Realizado---------------");
-            print.printPlayer(player);
+
+            if (validaPrint == 0) {
+                print.printPlayer(player);
+            }
         }
         public void EnemyRegister () {
             System.out.println("-------------Cadastro Enemy---------------");
@@ -38,6 +47,9 @@ public class Register {
             System.out.print("Escolha sua skin (red - green - blue): ");
             enemy.skin = teclado.nextLine();
             System.out.println("----------Cadastro Realizado---------------");
-            print.printEnemy(enemy);
+
+            if (validaPrint == 0) {
+                print.printEnemy(enemy);
+            }
         }
     }
