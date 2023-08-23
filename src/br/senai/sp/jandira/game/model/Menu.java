@@ -10,6 +10,7 @@ public class Menu {
         Register register = new Register();
         Battle battle = new Battle();
 
+
         boolean continuar = true;
         while (continuar){
 
@@ -32,7 +33,8 @@ public class Menu {
                     break;
 
                 case 2:
-                    //battle.Battle();
+                    battle.ChoiceScenary();
+                    battle.Battle();
                     System.out.println("*-*-* Em desenvolvimento! *-*-*");
                     break;
 

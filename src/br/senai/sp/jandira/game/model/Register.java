@@ -35,7 +35,7 @@ public class Register {
 
     }
 
-    public void PlayerRegister() {
+    public Player PlayerRegister() {
 
         /** Coleta dados do Player-1 */
         System.out.println("---------------- Cadastro Player ----------------");
@@ -50,9 +50,10 @@ public class Register {
             output.printPlayer(player);
         }
 
+        return player;
     }
 
-    public void EnemyRegister() {
+    public Enemy EnemyRegister() {
 
         /** Coleta dados do Enemy-1 */
         System.out.println("---------------- Cadastro Enemy ----------------");
@@ -66,6 +67,7 @@ public class Register {
             output.printEnemy(enemy);
         }
 
+        return enemy;
     }
 
     public void Decision() {
