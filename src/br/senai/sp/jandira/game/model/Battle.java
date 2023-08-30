@@ -31,10 +31,58 @@ public class Battle {
     }
 
     public void Battle(Player player, Enemy enemy){
-        System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/");
-        System.out.println("*****************************************************");
-        System.out.println("Vamos iniciar!!");
-        System.out.println("Os personagens são: \nPlayer: " + player + "\nEnemy: " + enemy);
-        System.out.println("O mapa escolhido foi: " + scenarioBattle);
+
+        while(true) {
+
+            int lifePlayer = player.getLife();
+            int lifeEnemy = enemy.getLife();
+
+            if (lifeEnemy == 0) {
+                System.out.println("-> O PLAYER " + player.nome + " É O VENCEDOR <-");
+
+                break;
+            } else if (lifePlayer == 0) {
+                System.out.println("-> O PLAYER " + enemy.nome + " É O VENCEDOR <-");
+
+                break;
+            }
+
+            System.out.println("--------------------- Battle ---------------------");
+            System.out.println("Ataque Player { C }" + player.nome + " life: " + lifePlayer);
+            System.out.println("Ataque enemy { X }" + enemy.nome + " life: " + lifeEnemy);
+
+            String attack = teclado.next();
+
+            if (attack.equalsIgnoreCase("c")) {
+
+                System.out.println("----------------------------------------------");
+                System.out.println("->           -> Player atacou <-            <-");
+                System.out.println("----------------------------------------------");
+
+                int danoPlayer = (int) (Math.random() * 20) + 1;
+
+                enemy.SubtrairVida(danoPlayer);
+
+                System.out.println("----------------------------------------------");
+                System.out.println(" O ataque foi de: ->" + danoPlayer + "<-");
+
+            } else if (attack.equalsIgnoreCase("x")) {
+                System.out.println("----------------------------------------------");
+                System.out.println("->            -> Enemy atacou <-            <-");
+                System.out.println("----------------------------------------------");
+
+                int danoEnemy = (int) (Math.random() * 20) + 1;
+
+                player.SubtrairVida(danoEnemy);
+
+                System.out.println("----------------------------------------------");
+                System.out.println(" O ataque foi de: ->" + danoEnemy + "<-");
+
+                System.out.println();
+
+            } else {
+                System.out.println("Tecla Invalida");
+            }
+        }
     }
 }

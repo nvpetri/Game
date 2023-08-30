@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7ec3b8-80de-4c62-a66b-d37261b9e14b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,15 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="br.senai.sp.jandira.game.Main" />
+      <module name="Game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
