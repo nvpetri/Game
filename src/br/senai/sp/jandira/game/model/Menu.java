@@ -34,7 +34,7 @@ public class Menu {
 
                 case 2:
                     battle.ChoiceScenary();
-                    battle.Battle();
+                    battle.Battle(register.player, register.enemy);
                     System.out.println("*-*-* Em desenvolvimento! *-*-*");
                     break;
 

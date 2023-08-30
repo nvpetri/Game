@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6a7ec3b8-80de-4c62-a66b-d37261b9e14b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/senai/sp/jandira/game/model/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/23111760/Desktop/java/Game/src",
+    "last_opened_file_path": "C:/Users/23111760/Desktop/Game/src/br/senai/sp/jandira/game/Main.java",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
