@@ -13,7 +13,7 @@ public class Player {
     }
     public void SubtrairVida(int danoEnemy){
 
-        life =- danoEnemy;
+        life -= danoEnemy;
 
         if (life < 0){
             life = 0;
