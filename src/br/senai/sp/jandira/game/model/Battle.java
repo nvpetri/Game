@@ -58,27 +58,56 @@ public class Battle {
                 System.out.println("----------------------------------------------");
                 System.out.println("->           -> Player atacou <-            <-");
                 System.out.println("----------------------------------------------");
+                System.out.println("Defesa Enemy { D }" + player.nome);
 
-                int danoPlayer = (int) (Math.random() * 20) + 1;
+                String defesa = teclado.next();
 
-                enemy.SubtrairVida(danoPlayer);
+                if (defesa.equalsIgnoreCase("d")) {
+                    int danoPlayer = ((int) (Math.random() * 20) + 1) - ((int) (Math.random() * 20) + 1);
 
-                System.out.println("----------------------------------------------");
-                System.out.println(" O ataque foi de: ->" + danoPlayer + "<-");
+                    enemy.SubtrairVida(danoPlayer);
+                    if (danoPlayer < 0){
+                        danoPlayer = 0;
+                    }
 
+                    System.out.println("----------------------------------------------");
+                    System.out.println(" O ataque foi de: ->" + danoPlayer + "<-");
+
+                    }else {
+
+                        int danoPlayer = (int) (Math.random() * 20) + 1;
+
+                        System.out.println("----------------------------------------------");
+                        System.out.println(" O ataque foi de: ->" + danoPlayer + "<-");
+
+                    }
             } else if (attack.equalsIgnoreCase("x")) {
                 System.out.println("----------------------------------------------");
                 System.out.println("->            -> Enemy atacou <-            <-");
                 System.out.println("----------------------------------------------");
+                System.out.println("Defesa Player { D }");
 
-                int danoEnemy = (int) (Math.random() * 20) + 1;
+                String defesa = teclado.next();
 
-                player.SubtrairVida(danoEnemy);
+                if (defesa.equalsIgnoreCase("d")) {
+                    int danoEnemy = ((int) (Math.random() * 20) + 1) - ((int) (Math.random() * 20) + 1);
 
-                System.out.println("----------------------------------------------");
-                System.out.println(" O ataque foi de: ->" + danoEnemy + "<-");
+                    enemy.SubtrairVida(danoEnemy);
+                    if (danoEnemy < 0){
+                        danoEnemy = 0;
+                    }
 
-                System.out.println();
+                    System.out.println("----------------------------------------------");
+                    System.out.println(" O ataque foi de: ->" + danoEnemy + "<-");
+
+                }else {
+
+                    int danoEnemy = (int) (Math.random() * 20) + 1;
+
+                    System.out.println("----------------------------------------------");
+                    System.out.println(" O ataque foi de: ->" + danoEnemy + "<-");
+
+                }
 
             } else {
                 System.out.println("Tecla Invalida");
